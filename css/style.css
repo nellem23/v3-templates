@@ -223,3 +223,25 @@ label.error {
 .button-blue-cta {
     background-color: #016FC4;
 }
+
+.button-blue-cta h1,
+.button-blue-cta h2,
+.button-blue-cta h3,
+.button-blue-cta h4,
+.button-blue-cta h5,
+.button-blue-cta p {
+    color: #ffffff;
+}
+
+/*
+.button-blue-cta input {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.button-blue-cta input:focused {
+    border: 4px solid #ffffff;
+    color: #c7c7c7;
+    background-color: transparent;
+}*/
