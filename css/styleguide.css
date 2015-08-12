@@ -1,0 +1,161 @@
+/*** Global ***/
+
+body {
+  font-family: 'Avenir Next', 'Cabin', sans-serif;
+  margin: auto 0;
+}
+
+img {
+  /* Prevents dragging of images/divs etc */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none; 
+  user-drag: none; 
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*** Typography ***/
+
+h1 {
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+  color: #4a4a4a;
+  font-size: 3.25em;
+}
+
+h2 {
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+  color: #4a4a4a;
+  font-size: 2.625em;
+  line-height: 1.3em;
+}
+
+h3 {
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: 600;
+  color: #4a4a4a;
+  font-size: 2.0em;
+}
+
+h4 {
+  font-family: 'Avenir Next', 'Cabin', sans-serif;
+  font-weight: 500;
+  color: #9b9b9b;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: .2rem; 
+}
+
+h5 {
+  font-family: 'Avenir Next', 'Cabin', sans-serif;
+  font-weight: 500;
+  color: #222222;
+  font-size: 1.0em;
+  text-transform: uppercase;
+  letter-spacing: .2rem; 
+}
+
+p {
+  font-family: 'Avenir Next', 'Cabin', sans-serif;
+  font-weight: 400;
+  color: #4a4a4a;
+  font-size: 1.125em;
+}
+
+.caption {
+  font-style: italic;
+  color: #9b9b9b;
+  font-size: 1.125em;
+  margin-top: 12px;
+}
+
+a {
+  color: #016fc4; 
+}
+
+a:hover {
+  color: #00589C;   
+}
+
+
+/*** Buttons ***/
+
+.button {
+  border-radius: 48px;
+  padding: 12px 24px 10px 24px;
+  font-family: 'Avenir Next', 'Cabin', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.0rem;
+  letter-spacing: .25rem;
+  font-weight: 500;
+}
+
+.primary-button {
+  border: 2px solid #016fc4;
+  color: #fff;
+  background-color: #016fc4;
+}
+
+.primary-button:hover {
+  color: #fff;
+  background-color: #00589C;
+}
+
+.primary-button:active {
+  background-color: #016fc4; 
+}
+
+.primary-button-white {
+  border: 2px solid #ffffff;
+  color: #40ACC6;
+  background-color: #ffffff;
+  margin-top: 48px;
+}
+
+.primary-button-white:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.primary-button-white:active {
+  background-color: #ffffff; 
+}
+
+.secondary-button {
+  border: 2px solid #016fc4;
+  color: #016fc4;
+  background-color: transparent;
+}
+
+.secondary-button:hover {
+  color: #fff;
+  background-color: #016fc4;
+}
+
+.secondary-button:active {
+  background-color: transparent;
+}
+
+.secondary-button-white {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  font-size: 0.9em;
+}
+
+.secondary-button-white:hover {
+  color: #016fc4;
+  background-color: #fff;
+}
+
+.secondary-button-white:active {
+  background-color: transparent;
+}
