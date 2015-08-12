@@ -11,7 +11,6 @@ fieldset {
 /*DROPDOWN STYLES */
 select{
     border: 2px solid #e4e4e4;
-    width: 21em;
     height: 2.5em;
     border-radius: 4px;
     font-size: 18px;
@@ -29,7 +28,6 @@ select{
 
 input{
     border: 2px solid #e4e4e4;
-    width: 400px;
     height: 2em;
     border-radius: 4px;
     font-size: 18px;
@@ -54,9 +52,7 @@ input[type=tel],
 input[type=time],
 input[type=url]
 {
-    width: 400px;
 }
-
 
 input[type=text], textarea {
   outline: none;
@@ -77,6 +73,11 @@ input[type=submit] {
     border-radius: 40px;
     width: 10em;
     height: 3.5em;
+}
+
+input[type=submit]:hover {
+    color: #fff;
+    background-color: #00589C;
 }
 
 input:-webkit-autofill,
@@ -159,17 +160,11 @@ input.error {
     border: 2px solid #EA5769; 
 }
 
-form.cmxform label.error, label.error {
-	/* remove the next line when you have trouble in IE6 with labels in list */
+label.error {
 /*    in line error*/
     color: #EA5769;
 	font-size: 14px;
     font-weight: 600;
-/*
-    background-image: url('ic_error.png');
-    background-repeat: no-repeat;
-	background-position: 12px;
-*/
     margin:1em;
 }
 
@@ -214,4 +209,13 @@ form.cmxform label.error, label.error {
 	font-size: 16px;
 	font-family: sans-serif;
     color: #ffffff !important;
+}
+
+/*div to replace hr rule*/
+.rule {
+    background-color: #C7C7C7;
+    height: 1px;
+    max-width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
