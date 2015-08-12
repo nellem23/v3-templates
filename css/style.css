@@ -1,0 +1,217 @@
+:focus {
+    box-shadow: 0 0 5px rgb(155, 155, 155);
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+fieldset {
+    border: 0px white;
+}
+
+/*DROPDOWN STYLES */
+select{
+    border: 2px solid #e4e4e4;
+    width: 21em;
+    height: 2.5em;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Avenir Next', 'Cabin', sans-serif;
+    color: #4A4A4A;
+    margin-bottom: .5em;
+    padding-left: 6px;
+    padding-right: 6px;
+    -webkit-appearance: none;
+    background: url('img/ic_dropdown-arrow.png') no-repeat 19.5em;
+
+}
+
+/*TEXT` INPUT FIELD STATE*/
+
+input{
+    border: 2px solid #e4e4e4;
+    width: 20em;
+    height: 2em;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Avenir Next', 'Cabin', sans-serif;
+    color: #4A4A4A;
+    margin-bottom: .5em;
+    padding-left: 6px;
+    padding-right: 6px;
+    overflow: hidden;
+ }
+
+textarea {
+    max-width: none;
+}
+
+textarea,
+input[type=text],
+input[type=email],
+input[type=date],
+input[type=datetime],
+input[type=tel],
+input[type=time],
+input[type=url]
+{
+    width: 22em;
+}
+
+
+input[type=text], textarea {
+  outline: none;
+  padding-left: 6px;
+  padding-right: 6px;
+  border: 2px solid #e4e4e4;
+
+}
+
+input[type=submit] {
+    background-color: #016FC4;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Avenir Next', 'Cabin', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 40px;
+    width: 12em;
+    height: 3.5em;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px white inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #4A4A4A;
+    background: url('img/ic_success.png');
+    background-repeat: no-repeat;
+    background-position: right
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: /*your box-shadow*/,0 0 0 50px white inset;
+    -webkit-text-fill-color: #333;
+} 
+
+/*TEXT INPUT FIELD TYPING STATE*/
+	/*Once user tabs or clicks into another field*/
+
+input:focus {
+    box-shadow: 0 0 5px rgb(155, 155, 155);
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+/*RADIO BUTTON STYLES
+	Radio button unselected has a border-size:2px; border-color:#E4E4E4; height:16px;width:16px;
+	Radio button selected has a border-size:2px; border-color:#E4E4E4; with a 8px by 8px circle in the color of #016FC4.
+	*/
+
+.radioinput{
+/*	this is the wrapper around radio buttons
+*/	margin: .5em;
+	display: block;
+}
+
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label {
+    color: #4A4A4A;
+    font-family: 'Avenir Next', 'Cabin', sans-serif;
+    font-size:14px;
+    border: 2px;
+    border-color: #E4E4E4;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:1.5em;
+    height:1.5em;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    border: 2px;
+    border-color: #E4E4E4;
+    background-color:#C7C7C7;    
+}
+
+input[type="radio"]:checked + label span{
+     background-color:#016FC4;
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+}
+
+/*IN LINE ERRROS*/
+	/*Show in-line error with text explaining the issue. Icon is outlined with 2px of #EB5F70
+	Show top level error notification with links to the focus field. Background is #EB5F70 and icon is outlined in white.*/
+
+
+input.error { 
+    border: 2px solid #EA5769; 
+}
+
+form.cmxform label.error, label.error {
+	/* remove the next line when you have trouble in IE6 with labels in list */
+/*    in line error*/
+    color: #EA5769;
+	font-size: 14px;
+    font-weight: 600;
+/*
+    background-image: url('ic_error.png');
+    background-repeat: no-repeat;
+	background-position: 12px;
+*/
+    margin:1em;
+}
+
+/*TOP LEVEL SUCCESS & ERROR MESSAGE
+	Once a user clicks “save settings” show top level success notification. Background is #50E3C2 and icon is outlined in white.
+	Show top level error notification with links to the focus field. Background is #EB5F70 and icon is outlined in white.*/
+
+#error-message{
+	width: 90%;
+	height: 44px;
+	background-color: #EA5769;
+	background-image: url('img/ic_error-white.png');
+    background-position: 12px;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+	margin: 12px;
+    display: none;
+}
+
+
+/*SUCCESS STATE*/
+	/*Once user tabs or clicks into another field show the in-line success icon outlined in #50E3C2.
+	All success icons stay on the page until a user clicks “save settings.” */
+#success-message{
+	width: 90%;
+	height: 44px;
+	background-color: #50E3C2;
+	background-image: url('img/ic_success-white.png');
+    background-position: 12px;
+    background-repeat: no-repeat;
+	border-radius: 4px;
+	margin: 12px;
+    display: none;
+}
+
+#success-message p, #error-message p{
+	padding-top:14px;
+	padding-left:48px;
+	padding-bottom:12px;
+	padding-right: 12px;
+    font-family: 'Avenir Next', 'Cabin', sans-serif;
+	font-size: 16px;
+	font-family: sans-serif;
+    color: #ffffff !important;
+}
