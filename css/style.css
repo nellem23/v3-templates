@@ -29,7 +29,7 @@ select{
 
 input{
     border: 2px solid #e4e4e4;
-    width: 20em;
+    width: 400px;
     height: 2em;
     border-radius: 4px;
     font-size: 18px;
@@ -54,7 +54,7 @@ input[type=tel],
 input[type=time],
 input[type=url]
 {
-    width: 22em;
+    width: 400px;
 }
 
 
@@ -75,7 +75,7 @@ input[type=submit] {
     letter-spacing: 2px;
     border: none;
     border-radius: 40px;
-    width: 12em;
+    width: 10em;
     height: 3.5em;
 }
 
